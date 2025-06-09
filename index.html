@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome | SunCare Hospital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    body {
+      background-image: linear-gradient(
+        rgba(173, 216, 230, 0.75),
+        rgba(255, 182, 193, 0.75)
+      ), url('https://images.unsplash.com/photo-1588776814546-ec7b7c78bc09?auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .container {
+      color: #004080;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      max-width: 800px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .container h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #0077cc;
+    }
+
+    .container p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      color: #004466;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(to right, #ff6fa2, #4facfe);
+      color: white;
+      padding: 15px 35px;
+      font-size: 1rem;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(79, 172, 254, 0.4);
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(to right, #4facfe, #ff6fa2);
+      box-shadow: 0 8px 20px rgba(79, 172, 254, 0.5);
+      transform: translateY(-3px);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .container h1 {
+        font-size: 2rem;
+      }
+
+      .container p {
+        font-size: 1rem;
+      }
+
+      .btn {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-hospital-symbol"></i> <b style="color: red;">Hinn</b><b style="color: black;">Care</b></h1>
+    <p>Blending technology and compassion — your health is our promise.</p>
+    <a class="btn" href="home.html">Start Application</a>
+  </div>
+</body>
+</html>
